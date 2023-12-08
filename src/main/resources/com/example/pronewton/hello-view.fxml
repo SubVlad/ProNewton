@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.control.Cell?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.pronewton.HelloController" fx:id="BorderPane">
+
+    <top>
+        <BorderPane>
+            <top>
+                <Label/>
+            </top>
+            <center>
+                <BorderPane>
+                    <top>
+                        <BorderPane>
+                            <top>
+                                <Label/>
+                            </top>
+                            <center>
+                                <Label fx:id="welcomeLabel" text="Добро пожаловать!"/>
+                            </center>
+                        </BorderPane>
+                    </top>
+                    <center>
+                        <BorderPane>
+
+                            <center>
+                                <BorderPane>
+
+                                    <center>
+                                        <BorderPane>
+                                            <center>
+                                                <Label fx:id="welcomeLabel4" text="Вводите значения через разделитель"/>
+                                            </center>
+                                            <bottom>
+                                                <BorderPane>
+                                                    <center>
+                                                        <Label fx:id="welcomeLabel5" text="В качестве разделителя может выступать любой символ кроме пробела и точки"/>
+                                                    </center>
+                                                    <bottom>
+                                                        <BorderPane>
+                                                            <center>
+                                                                <Label fx:id="welcomeLabel6" text="Между двумя числами должен быть только один разделитель, например: '-1;0;1.4;2.5e4G7' "/>
+                                                            </center>
+                                                            <bottom>
+                                                                <BorderPane>
+                                                                    <center>
+                                                                        <Label fx:id="welcomeLabel7" text="Если кнопка не работает, то либо где-то стоит лишний разделитель, либо количества чисел в окнах не равны"/>
+                                                                    </center>
+                                                                    <bottom>
+                                                                        <BorderPane>
+                                                                            <center>
+                                                                                <Label text="Программа понимает десятичные дроби. Для указания дробной части, по классике, используйте точку"/>
+                                                                            </center>
+                                                                            <bottom>
+                                                                                <BorderPane>
+                                                                                    <center>
+                                                                                        <Label text="Для удобной навигации по окошкам полезно использовать клавишу Tab"/>
+                                                                                    </center>
+                                                                                </BorderPane>
+                                                                            </bottom>
+                                                                        </BorderPane>
+                                                                    </bottom>
+                                                                </BorderPane>
+                                                            </bottom>
+                                                        </BorderPane>
+                                                    </bottom>
+                                                </BorderPane>                                            </bottom>
+                                        </BorderPane>                                    </center>
+                                </BorderPane>                            </center>
+                        </BorderPane>
+                    </center>
+                </BorderPane>
+            </center>
+        </BorderPane>
+    </top>
+    <left>
+        <BorderPane>
+            <padding>
+                <Insets bottom="80.0" left="60.0" top="10.0"/>
+            </padding>
+            <left>
+                <BorderPane>
+                    <top>
+                        <Label text="X: " maxWidth="50" />
+                    </top>
+                    <center>
+                        <Label text="Y: " maxWidth="50" />
+                    </center>
+                    <bottom>
+
+                    </bottom>
+                </BorderPane>
+            </left>
+            <right>
+                <BorderPane>
+                    <top>
+                        <TextField fx:id="fieldX" text="" minWidth="480" />
+                    </top>
+                    <center>
+                        <TextField fx:id="fieldY" text="" minWidth="480" />
+                    </center>
+                    <bottom>
+
+                    </bottom>
+                </BorderPane>
+            </right>
+
+        </BorderPane>
+    </left>
+    <bottom>
+        <BorderPane>
+            <padding>
+                <Insets bottom="40.0" left="20.0" right="20.0" top="0.0"/>
+            </padding>
+            <top>
+                <BorderPane>
+                    <left>
+
+                    </left>
+                    <center>
+                        <Button text="Ввод" onAction="#calculate"/>
+                    </center>
+                    <bottom>
+                        <TextField fx:id="answer" text="Ответ" maxWidth="800" />
+                    </bottom>
+                </BorderPane>
+            </top>
+            <bottom>
+                <Label fx:id="ee" text="">
+                    <Cell>
+                        <properties property="answer"/>
+                    </Cell>
+                </Label>
+            </bottom>
+        </BorderPane>
+    </bottom>
+    <padding>
+        <Insets bottom="0.0" left="0.0" right="0.0" top="0.0"/>
+    </padding>
+</BorderPane>
